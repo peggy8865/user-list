@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 經測試，body 無法放 background-color，只能放 background-image，除非 height 設 0% */
+.container-fluid.for-user-panel {
+  min-height: 100%;
+  padding: 100px 50px 10px 60px;
+  background-color: #DBDAAF;
+}
+
+#user-panel {
+  min-height: 570px;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-weight: bold;
+}
+
+.card>.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.card>.grow:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.click-like, .click-unlike {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.user-image {
+  border-radius: 10%;
+}
+
+.user-name {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
